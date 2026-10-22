@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#090b10">
+  <meta name="description" content="Browse all motion graphics, 2D compositing and video editing projects by Zeroshi.">
+  <title>All Projects — Zeroshi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261022-4">
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html#home" aria-label="Zeroshi home"><span class="brand-mark">Z</span><span id="brand-name">Zeroshi</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html#home"><span class="nav-icon" aria-hidden="true">⌂</span>Home</a>
+        <a class="nav-link" href="index.html#about"><span class="nav-icon" aria-hidden="true">♙</span>About</a>
+        <a class="nav-link active" href="#projects"><span class="nav-icon" aria-hidden="true">▦</span>All Projects</a>
+        <a class="nav-link" href="index.html#contact"><span class="nav-icon" aria-hidden="true">✉</span>Contact</a>
+      </nav>
+      <div class="sidebar-bottom"><small>© <span id="year">2026</span> Zeroshi.<br>All rights reserved.</small></div>
+    </aside>
+
+    <main class="archive-main">
+      <header class="archive-hero section-pad" id="projects">
+        <video class="archive-showreel" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/portfolio-showreel.mp4" type="video/mp4">
+        </video>
+        <div class="archive-hero-content">
+          <p class="eyebrow"><span></span>Complete Portfolio</p>
+          <h1>All Projects</h1>
+          <p class="archive-copy">Explore the full collection of motion graphics, 2D compositing and video editing work.</p>
+          <a class="archive-back" href="index.html#portfolio">← Back to selected projects</a>
+        </div>
+      </header>
+
+      <section class="archive-projects section-pad" aria-labelledby="archive-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span>Project Archive</p><h2 id="archive-heading">Browse All Work</h2></div>
+          <p>Filter projects by discipline</p>
+        </div>
+        <div class="portfolio-filters" role="group" aria-label="Filter all portfolio projects">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Work</button>
+          <button class="filter-btn" type="button" data-filter="compositing" aria-pressed="false">2D Compositing</button>
+          <button class="filter-btn" type="button" data-filter="motion" aria-pressed="false">Motion Graphics</button>
+          <button class="filter-btn" type="button" data-filter="editing" aria-pressed="false">Video Editing</button>
+        </div>
+        <p class="project-count" id="project-count" role="status" aria-live="polite"></p>
+        <div class="project-grid" id="project-list"></div>
+        <p class="empty-projects" id="empty-projects" hidden>No projects in this category yet.</p>
+      </section>
+      <footer class="main-footer"><span>ZEROSHI — ALL PROJECTS</span><a href="#projects">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+
+  <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <div class="modal-inner">
+      <div class="modal-top"><span class="modal-overline" id="modal-category">SELECTED WORK</span><button class="modal-close" type="button" id="modal-close" aria-label="Close project details">✕</button></div>
+      <h2 id="modal-title">Project title</h2>
+      <p class="modal-description" id="modal-description"></p>
+      <div class="modal-video" id="modal-video"></div>
+      <div class="modal-details"><div><small>YEAR</small><span id="modal-year"></span></div><div><small>SOFTWARE</small><span id="modal-tools"></span></div><div><small>CATEGORY</small><span id="modal-category-detail"></span></div></div>
+      <button type="button" class="modal-return" id="modal-return">← Back to projects</button>
+    </div>
+  </dialog>
+  <script src="projects.js?v=20261022-8"></script>
+  <script src="all-projects.js?v=20261022-3"></script>
+</body>
+</html>
