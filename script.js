@@ -2,7 +2,10 @@
 // No dependencies. All source paths are relative for GitHub Pages project repositories.
 const config = window.PORTFOLIO_CONFIG || {};
 // Keep All Work concise while allowing category filters to reveal matching archive projects.
-const projects = window.PORTFOLIO_PROJECTS || [];
+// Newest work appears first. Projects from the same year keep their curated order.
+const projects = [...(window.PORTFOLIO_PROJECTS || [])].sort(
+  (a, b) => (Number(b.year) || 0) - (Number(a.year) || 0)
+);
 const $ = (selector) => document.querySelector(selector);
 const safeText = (value) => String(value ?? "");
 const categoryNames = { compositing: "2D Compositing", motion: "Motion Graphics", editing: "Video Editing" };
