@@ -147,7 +147,7 @@ window.PORTFOLIO_PROJECTS = [
     id: "project-13",
     title: "3 Râu House_Thổi Bùng Vị Giác",
     category: "motion",
-    year: 2025,
+    year: 2023,
     thumbnail: "assets/project-13.jpg",
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator",
