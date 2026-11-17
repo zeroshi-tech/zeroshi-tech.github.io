@@ -15,14 +15,14 @@ window.PORTFOLIO_PROJECTS = [
   {
     id: "project-01",
     title: "LALAMOVE - Ghost Month",
-    hidden: true, // Đổi thành false (hoặc xoá dòng này) để hiện lại project
+    hidden: false, // Đổi thành true để ẩn project
     category: "motion",
     year: 2026,
     thumbnail: "assets/project-01.jpg",
     description: "Client: LALAMOVE\nJingle Music: Buzzle Studio\nMotion: Lam Nguyen",
     tools: "After Effects, Photoshop, Premiere Pro, Illustrator",
     videoType: "googledrive",
-    videoId: "1QwO7t4EjP3R1EW5qMZapmPuJgEhJnGS-",
+    videoId: "1OohtuqbMVqY4y1TpZd0-kzgnyoZAIeYt",
   },
   {
     id: "project-02",
@@ -32,8 +32,8 @@ window.PORTFOLIO_PROJECTS = [
     thumbnail: "assets/project-02.jpg",
     description: "Client: BE\nAgency: Buzzle Studio\nMotion: Lam Nguyen",
     tools: "After Effects, Photoshop",
-    videoType: "vimeo", // hoặc "vimeo"
-    videoId: "1237204495", // Điền ID YouTube / Vimeo thật
+    videoType: "googledrive",
+    videoId: "1nub-NhC4G4yZX5OoI40wNZSxdu2baQPn",
   },
   {
     id: "project-03",
@@ -43,8 +43,8 @@ window.PORTFOLIO_PROJECTS = [
     thumbnail: "assets/project-03.jpg",
     description: "Graduation Project by: Wimber Cas\nArtist: Wimber Cas\nMotion: Lam Nguyen & Nguyen Nhi",
     tools: "After Effects, Photoshop",
-    videoType: "vimeo", // hoặc "vimeo"
-    videoId: "1237207714", // Điền ID YouTube / Vimeo thật
+    videoType: "googledrive",
+    videoId: "15iPcJrNoLcTnT4XgyaLzQbYc5pbiP0Za",
   },
   {
     id: "project-04",
@@ -55,7 +55,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "1A-TouFbvliNzX9GZamYpMXiQz-HOdyGj",
+    videoId: "1Zzc2KJ0ex0dCqAIofJebcMs0T81jh4Na",
   },
   {
     id: "project-05",
@@ -66,7 +66,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: Bomines\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "1icVyqe7bZANvo4_lTzxkVCFjsRJg0cgO",
+    videoId: "1uxyiot0-p9Yu8PxMOBlrSoEIDgNtnlQ-",
   },
   {
     id: "project-06",
@@ -77,7 +77,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: Bomines\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "1E3xkIIPVHgfVaK17N7UyNJ9fMKp7y-Hu",
+    videoId: "1mVk2gkBZT9hvoS0_w-OK8E1QAt4zL8b3",
   },
   {
     id: "project-07",
@@ -88,7 +88,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: LALAMOVE\nAgency: Buzzle Studio\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator",
     videoType: "googledrive",
-    videoId: "1I0qQ-t9a42Z49QOU5wzykI7-3TQCJl5m",
+    videoId: "1BvYrgFbv0oDR_USegGen4_ZPPWuj6-w3",
   },
   {
     id: "project-08",
@@ -99,7 +99,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "1D7VUdU3Ftvu4QDIhEINc7ANmlQUpYR-b",
+    videoId: "1yf1pa0-FBjiF5HuCl5CKgIShZyTXWadM",
   },
   {
     id: "project-09",
@@ -110,7 +110,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "113j_pmkDUltKW7cg1cUTP7VKl1LIOw6g",
+    videoId: "19cf8qzwju59nao41tfyMqaIsUgO1FcEP",
   },
   {
     id: "project-10",
@@ -121,7 +121,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator, Premiere Pro",
     videoType: "googledrive",
-    videoId: "1nuXLhWhXHOZ4ePrmFxuxB_dfiBLbeNYh",
+    videoId: "1fyyEEQXVR4OJNDrXIn6AbLSV-heNleYx",
   },
   {
     id: "project-11",
@@ -132,7 +132,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: Dai-ichi Life\nAgency: Buzzle Studio\nMotion & VFX: Lam Nguyen",
     tools: "After Effects, Photoshop",
     videoType: "googledrive",
-    videoId: "1V0_jLEccBC6yjvO_EdrSBzvmOSmg3c8c",
+    videoId: "1HGnoJsVkeZWMcMh3-oyCvhv2xmLjoop1",
   },
   {
     id: "project-12",
@@ -143,7 +143,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Graduation Project by: Hoang Lan\nMotion: Lam Nguyen\n3D Artist: Nguyen Van Loc",
     tools: "After Effects, Photoshop",
     videoType: "googledrive",
-    videoId: "1Fb3xBTzqm43mK7w2rSTOjz9BtKNVnwyI",
+    videoId: "1NxGsoQ9GOo5doK3VuE-8-uskO7opZMd6",
   },
   {
     id: "project-13",
@@ -154,7 +154,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: 3 Râu House\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator",
     videoType: "googledrive",
-    videoId: "1z58z4lH_T6iOyKfO9pfX9MfVxDG0lyYM",
+    videoId: "1OHogC2mrudNIj_-CEM5IpCAvN8Zjz6kG",
   },
   {
     id: "project-14",
@@ -176,7 +176,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: SHB\nAgency: Buzzle Studio\nMotion: Lam Nguyen",
     tools: "After Effects, Illustrator",
     videoType: "googledrive",
-    videoId: "1s_tcv10HX1mFazRJ9HoSCMpADzZeqbLG",
+    videoId: "16rJff_p76Bb1S58P7APhu0LJZ_9Cn4tB",
   },
   {
     id: "project-16",
@@ -187,7 +187,7 @@ window.PORTFOLIO_PROJECTS = [
     description: "Client: OPTIMUM GOLD\nMotion: Lam Nguyen",
     tools: "After Effects, Photoshop",
     videoType: "googledrive",
-    videoId: "11jgvktcNr3c0n5pH--nZJJ5xLaEA2zSp",
+    videoId: "1cvbvClox3yn-r2kCbIh0tHspZav2XGqG",
   },
   {
     id: "project-17",
