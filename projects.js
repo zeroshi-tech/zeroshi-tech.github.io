@@ -198,9 +198,9 @@ window.PORTFOLIO_PROJECTS = [
     description: "Graduation Project by: Huynh Khanh Vy\nCompositing: Lam Nguyen & Nguyen Nhi",
     tools: "After Effects, Photoshop",
     videoType: "googledrive",
-    videoId: "1BOUMkuYITwAAt9_g4914k8S-6GQWTYiD",
+    videoId: "1bOfHGDbpcYy28Fui3-QCQF0_PY2hjaGe",
     breakdownVideoType: "googledrive",
-    breakdownVideoId: "1hzTd2XgslC6O6Ma598E-qFzpVnj2e1RA",
+    breakdownVideoId: "1B7NSfdVbUnjzr7XYzMADSvxrAD56r53U",
   },
   {
     id: "project-18",
@@ -214,6 +214,6 @@ window.PORTFOLIO_PROJECTS = [
     videoId: "",
     videoPlaceholder: "COMING SOON++",
     breakdownVideoType: "googledrive",
-    breakdownVideoId: "18Kqh0100KiXUi8lNovKwZTm95K1vg6Nz",
+    breakdownVideoId: "1qs_ip8uei04r9vBe1e-VhNljNnqmqzx9",
   },
 ];
