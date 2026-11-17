@@ -10,10 +10,12 @@ window.PORTFOLIO_CONFIG = {
 // thumbnail: đường dẫn tương đối từ index.html, ví dụ "assets/my-thumbnail.jpg"
 // videoType: "youtube" hoặc "vimeo"; videoId: ID video (không phải URL đầy đủ).
 // Nếu videoId để trống, popup vẫn hoạt động và hiện hướng dẫn.
+// hidden: true -> ẩn project khỏi trang chủ và All Projects; đổi thành false để bật lại.
 window.PORTFOLIO_PROJECTS = [
   {
     id: "project-01",
     title: "LALAMOVE - Ghost Month",
+    hidden: true, // Đổi thành false (hoặc xoá dòng này) để hiện lại project
     category: "motion",
     year: 2026,
     thumbnail: "assets/project-01.jpg",

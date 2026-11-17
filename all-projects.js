@@ -2,7 +2,8 @@
 
 const config = window.PORTFOLIO_CONFIG || {};
 // Newest work appears first. Projects from the same year keep their curated order.
-const projects = [...(window.PORTFOLIO_PROJECTS || [])].sort(
+// Projects with hidden: true are skipped everywhere (set to false to show again).
+const projects = (window.PORTFOLIO_PROJECTS || []).filter((p) => !p.hidden).sort(
   (a, b) => (Number(b.year) || 0) - (Number(a.year) || 0)
 );
 const $ = (selector) => document.querySelector(selector);
