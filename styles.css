@@ -97,11 +97,36 @@ body.modal-open {overflow:hidden}
 @media(max-width:700px){.archive-teaser{height:104px;margin-top:24px}.archive-teaser-grid{grid-template-columns:repeat(3,70%);gap:10px;transform:translateX(-55%)}.archive-teaser-kicker{top:9px;left:10px}.archive-teaser-overlay{padding:20px 12px 0}.archive-teaser-overlay small{font-size:9px}}
 
 /* Showreel between About and Portfolio */
-.showreel-heading{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:18px}
-.showreel-heading .eyebrow{justify-content:center}
-.showreel-heading .eyebrow>span:last-child{background:linear-gradient(90deg,var(--purple),var(--blue))}
-.showreel-heading h2{margin:4px 0 6px;font-size:clamp(34px,4.6vw,58px);line-height:1.08;letter-spacing:-.045em;text-shadow:0 0 40px rgba(110,100,255,.25)}
-.showreel-heading h2 span{background:linear-gradient(100deg,#568bff,#a45bff);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 18px rgba(130,100,255,.45))}
-.showreel-heading{margin-bottom:26px}
+.showreel-heading{position:relative;display:flex;justify-content:center;margin:6px 0 30px;padding:18px 0 8px;isolation:isolate}
+/* Comic halftone glow behind the title */
+.showreel-heading::before{content:"";position:absolute;z-index:-1;left:50%;top:50%;width:min(760px,100%);height:150%;transform:translate(-50%,-50%) rotate(-4deg);background:radial-gradient(circle,rgba(255,45,149,.55) 1.3px,transparent 1.9px) 0 0/9px 9px,radial-gradient(circle,rgba(0,229,255,.4) 1.3px,transparent 1.9px) 4px 4px/9px 9px;-webkit-mask:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.5) 35%,transparent 68%);mask:radial-gradient(ellipse at center,#000 0%,rgba(0,0,0,.5) 35%,transparent 68%);opacity:.55;pointer-events:none}
+
+/* SHOWREEL — comic multiverse title: misregistered print, 3D depth, halftone fill, glitch */
+.sv-wrap{position:relative;display:inline-block}
+.showreel .sv-title{position:relative;display:inline-block;margin:0;font:400 clamp(46px,8.4vw,116px)/1 "Bungee","Space Grotesk",sans-serif;letter-spacing:.01em;color:#ff2d95;transform:perspective(700px) rotateX(14deg) skewX(-7deg) rotate(-2deg);transform-origin:50% 60%;user-select:none;animation:sv-jolt 4.2s steps(1) infinite}
+.sv-layer,.sv-face{display:block;white-space:nowrap}
+.sv-layer{position:absolute;inset:0;pointer-events:none}
+.sv-face{position:relative;z-index:3;background:radial-gradient(circle,rgba(255,255,255,.42) 1.1px,transparent 1.7px) 0 0/6px 6px,linear-gradient(176deg,#ffd1f2 0%,#ff5ccf 18%,#ff2d95 52%,#d6176f 78%,#8f1aa8 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:2px #14081f;paint-order:stroke fill}
+.sv-depth{z-index:0;color:#14081f;-webkit-text-stroke:2px #14081f;text-shadow:1px 1px 0 #24104a,2px 2px 0 #24104a,3px 3px 0 #2a1459,4px 4px 0 #2a1459,5px 5px 0 #1d0c3c,6px 6px 0 #1d0c3c,7px 7px 0 #14081f,8px 8px 0 #14081f,10px 12px 22px rgba(0,0,0,.6)}
+.sv-cyan{z-index:1;color:#00e5ff;transform:translate(-7px,-4px);opacity:.95;animation:sv-shift-cyan 3.2s infinite}
+.sv-red{z-index:2;color:#ff2b3a;transform:translate(6px,3px);opacity:.9;mix-blend-mode:screen;animation:sv-shift-red 3.2s infinite}
+.sv-glitch{z-index:4;background:linear-gradient(176deg,#ffe95c,#ff5ccf 55%,#00e5ff);-webkit-background-clip:text;background-clip:text;color:transparent;clip-path:inset(50% 0 50% 0)}
+.sv-g1{animation:sv-slice-1 2.6s infinite steps(1)}
+.sv-g2{animation:sv-slice-2 3.4s infinite steps(1);background:linear-gradient(176deg,#00e5ff,#7d5cff 60%,#ff2d95);-webkit-background-clip:text;background-clip:text}
+.sv-title:hover{animation-duration:.9s}
+.sv-title:hover .sv-g1{animation-duration:.7s}
+.sv-title:hover .sv-g2{animation-duration:.9s}
+.sv-title:hover .sv-cyan,.sv-title:hover .sv-red{animation-duration:.8s}
+
+.sv-sticker{position:absolute;z-index:5;right:-34px;top:-16px;padding:5px 10px 4px;border:2px solid #14081f;border-radius:3px;background:#ffe14d;color:#14081f;font:400 clamp(10px,1.05vw,13px)/1 "Bungee",sans-serif;letter-spacing:.04em;transform:rotate(9deg);box-shadow:4px 4px 0 #ff2d95,4px 4px 0 2px #14081f;animation:sv-sticker 3.2s ease-in-out infinite}
+
+@keyframes sv-shift-cyan{0%,86%,100%{transform:translate(-7px,-4px)}88%{transform:translate(-15px,-2px)}90%{transform:translate(3px,-6px)}92%{transform:translate(-10px,-4px)}}
+@keyframes sv-shift-red{0%,86%,100%{transform:translate(6px,3px)}88%{transform:translate(14px,1px)}90%{transform:translate(-4px,5px)}92%{transform:translate(9px,3px)}}
+@keyframes sv-slice-1{0%,74%,100%{clip-path:inset(50% 0 50% 0);transform:none}76%{clip-path:inset(12% 0 70% 0);transform:translate(-14px,0)}78%{clip-path:inset(58% 0 22% 0);transform:translate(12px,0)}80%{clip-path:inset(34% 0 52% 0);transform:translate(-7px,0)}82%{clip-path:inset(80% 0 4% 0);transform:translate(16px,0)}84%{clip-path:inset(50% 0 50% 0)}}
+@keyframes sv-slice-2{0%,60%,100%{clip-path:inset(50% 0 50% 0);transform:none}62%{clip-path:inset(4% 0 84% 0);transform:translate(10px,0)}64%{clip-path:inset(44% 0 38% 0);transform:translate(-18px,0)}66%{clip-path:inset(68% 0 12% 0);transform:translate(8px,0)}68%{clip-path:inset(50% 0 50% 0)}}
+@keyframes sv-jolt{0%,88%,100%{transform:perspective(700px) rotateX(14deg) skewX(-7deg) rotate(-2deg)}89%{transform:perspective(700px) rotateX(14deg) skewX(-12deg) rotate(-2deg) translateX(-4px)}91%{transform:perspective(700px) rotateX(14deg) skewX(-3deg) rotate(-1deg) translateX(3px)}}
+@keyframes sv-sticker{0%,100%{transform:rotate(9deg) translateY(0)}50%{transform:rotate(6deg) translateY(-3px)}}
+@media(max-width:700px){.showreel .sv-title{font-size:clamp(34px,11vw,56px)}.sv-cyan{transform:translate(-4px,-2px)}.sv-red{transform:translate(4px,2px)}.sv-sticker{right:-10px;top:-18px}.showreel-heading{margin-bottom:22px}}
+@media(prefers-reduced-motion:reduce){.sv-title,.sv-cyan,.sv-red,.sv-glitch,.sv-sticker{animation:none!important}}
 .showreel-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border:1px solid #2a3247;border-radius:8px;background:radial-gradient(circle at 50% 50%,rgba(125,103,255,.14),transparent 60%),#0d111b;box-shadow:0 20px 60px rgba(0,0,0,.35),0 0 0 1px rgba(120,110,255,.06)}
 .showreel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
