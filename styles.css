@@ -95,3 +95,9 @@ body.modal-open {overflow:hidden}
 .archive-teaser:hover .archive-teaser-overlay strong span{transform:translateX(5px)}
 @media(max-width:1000px){.archive-teaser-grid{gap:12px}}
 @media(max-width:700px){.archive-teaser{height:104px;margin-top:24px}.archive-teaser-grid{grid-template-columns:repeat(3,70%);gap:10px;transform:translateX(-55%)}.archive-teaser-kicker{top:9px;left:10px}.archive-teaser-overlay{padding:20px 12px 0}.archive-teaser-overlay small{font-size:9px}}
+
+/* Showreel between About and Portfolio */
+.showreel .section-heading{margin-bottom:18px}
+.showreel-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border:1px solid #2a3247;border-radius:8px;background:radial-gradient(circle at 50% 50%,rgba(125,103,255,.14),transparent 60%),#0d111b;box-shadow:0 20px 60px rgba(0,0,0,.35),0 0 0 1px rgba(120,110,255,.06)}
+.showreel-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+@media(max-width:700px){.showreel .section-heading{align-items:flex-start;flex-direction:column;gap:6px}}
