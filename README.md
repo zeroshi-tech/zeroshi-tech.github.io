@@ -45,11 +45,3 @@ Bản website tĩnh HTML/CSS/JS được xây trên giao diện Zero Shi gốc, 
 - Video YouTube/Vimeo cần được bật quyền embed trên nền tảng tương ứng.
 - Bộ ZIP **không có video portfolio thật hoặc email cá nhân**; m cần điền vào `projects.js`.
 
-## Hiệu ứng con trỏ "dựng trang" (cursor agents)
-
-Khi mở trang, một bầy con trỏ màu bay ra và "dựng" trang: mỗi con trỏ kéo một khung chọn quanh từng phần tử rồi phần tử đó hiện ra. Các phần bên dưới được dựng khi cuộn tới. Dựng xong, 5 con trỏ bám theo chuột, vẽ khung quanh thứ đang hover, và một bầy con trỏ bay lên ở phần Contact.
-
-- Code: `cursor-agents.js` và `cursor-agents.css`, cùng một đoạn script nhỏ trong `<head>` của `index.html` và `all-projects.html`.
-- Phần tử nào được dựng: `LAYER_SELECTOR` trong `cursor-agents.js`. Tên và màu con trỏ: `NAMES` và `COLORS`.
-- Người xem có thể bấm **Skip** khi đang dựng hoặc **Hide** sau đó; lựa chọn được ghi nhớ. Ai bật "reduce motion" trong hệ điều hành sẽ không thấy hiệu ứng.
-- Muốn gỡ: xoá 2 file trên và các dòng tham chiếu tới chúng trong 2 file HTML.
